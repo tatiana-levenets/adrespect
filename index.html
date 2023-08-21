@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdRespect</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body class="font-sans">
+    <header>
+      <div
+        class="container-px mx-auto flex flex-col justify-between py-10 lg:flex-row"
+      >
+        <div
+          class="borde mb-14 border-b border-black pb-5 lg:mb-0 lg:border-none lg:pb-0"
+        >
+          <a href="#">
+            <img
+              src="./src/assets/logos/logo-base-dark.svg"
+              width="115"
+              height="20"
+              alt="logo"
+          /></a>
+        </div>
+
+        <nav>
+          <ul class="flex flex-col justify-between text-sm lg:flex-row">
+            <li class="menu nav-li relative">
+              <span class="inline-block">
+                <a
+                  href="#oferta"
+                  class="hover:text-bold lg:bg-arrow_nav block bg-right bg-no-repeat pr-4"
+                  >Oferta
+                </a>
+              </span>
+              <ul
+                class="submenu bg-lightgrey visible static top-full left-0 z-10 rounded-md p-3 opacity-100 transition-all lg:invisible lg:absolute lg:opacity-0 lg:shadow-md"
+              >
+                <li class="cursor-pointer pb-2 hover:underline">
+                  <a href="#projekty">Projekty</a>
+                </li>
+                <li class="cursor-pointer pb-2 hover:underline">
+                  <a href="#projekty">Wizualizacje</a>
+                </li>
+                <li class="cursor-pointer hover:underline">
+                  <a href="#projekty">Realizacje</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-li">
+              <a href="#o_firme" class="hover:text-bold hover:underline"
+                >O firmie</a
+              >
+            </li>
+            <li class="nav-li">
+              <a href="#projekty" class="hover:text-bold hover:underline"
+                >Realizacje</a
+              >
+            </li>
+            <li class="nav-li">
+              <a href="#kontakt" class="hover:text-bold hover:underline"
+                >Kontakt</a
+              >
+            </li>
+            <li class="nav-li relative cursor-pointer">
+              <button
+                id="search"
+                class="bg-search h-6 w-6 bg-contain bg-center bg-no-repeat"
+              ></button>
+              <input
+                type="text"
+                id="input"
+                class="border-green focus:outline-green absolute top-full right-0 z-10 h-0 w-0 rounded-md border bg-white p-0 shadow-md transition-all duration-300"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="relative">
+        <!-- slider -->
+
+        <div id="slider-top">
+          <ul>
+            <!-- slide 1 -->
+
+            <li class="w-screen min-w-[100vw]">
+              <div class="bg-opacity-1 bg-beige relative before:absolute">
+                <div class="container-px pb-8 lg:pb-0">
+                  <div class="mx-auto py-16 lg:py-36">
+                    <div>
+                      <h1
+                        class="title mb-5 w-full leading-tight lg:mb-10 lg:w-1/2"
+                      >
+                        Nowoczesna aranżacja<br />Twojego ogrodu
+                      </h1>
+                      <p
+                        class="mb-5 w-3/4 text-sm leading-normal lg:mb-11 lg:w-1/3"
+                      >
+                        Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                        estetyka realizacji. Oferujemy kompleksowy zakres usług
+                        z indywidualnym podejściem do każdego projektu.
+                      </p>
+                      <div class="w-full text-base lg:w-1/2">
+                        <button
+                          class="btn bg-green text-lightgrey border-green hover:bg-beige hover:text-green mr-9 mb-4"
+                        >
+                          Skontaktuj się z nami
+                        </button>
+                        <button
+                          class="btn btn_hover border-green text-green hover:bg-green hover:text-lightgrey bg-transparent"
+                        >
+                          Zobacz nasze realizacje
+                          <span
+                            class="arrow hover_zobacz bg-green_arrow rotate-90"
+                          ></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="absolute right-0 top-0 bottom-0 hidden w-1/2 lg:block"
+                  >
+                    <img
+                      src="./src/assets/images/slide1-pattern.png"
+                      alt="slide1-pattern"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- slide 2 -->
+            <li class="w-screen min-w-[100vw]">
+              <div
+                class="flex h-full items-center justify-center bg-slate-100 text-center"
+              >
+                <div class="container-px text-9xl font-bold">SLIDE 2</div>
+              </div>
+            </li>
+            <!-- slide 3 -->
+            <li class="w-screen min-w-[100vw]">
+              <div
+                class="flex h-full items-center justify-center bg-slate-100 text-center"
+              >
+                <div class="container-px text-9xl font-bold">SLIDE 3</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-invisible absolute right-0 bottom-0">
+          <button
+            id="slider-top-prev-btn"
+            class="bg-lightgrey bg-bold_arrow hover:bg-beige h-24 w-24 bg-opacity-0 bg-center bg-no-repeat text-black transition-all hover:bg-opacity-0 lg:bg-opacity-100 lg:hover:bg-opacity-100"
+          ></button>
+          <button
+            id="slider-top-next-btn"
+            class="bg-lightgrey bg-bold_arrow hover:bg-beige h-24 w-24 rotate-180 bg-opacity-0 bg-center bg-no-repeat text-black transition-all hover:bg-opacity-0 lg:bg-opacity-100 lg:hover:bg-opacity-100"
+          ></button>
+        </div>
+      </section>
+
+      <section class="bg-lightgrey pb-16 pt-14 lg:pt-32 lg:pb-40" id="oferta">
+        <div class="container-px mx-auto">
+          <div class="subcontainer">
+            <div>
+              <p class="text-green mb-3 text-xs">Oferta</p>
+              <h2 class="subtitle mb-3 lg:mb-7">
+                Działamy
+                <span
+                  class="break-words italic drop-shadow-[0_4px_5px_rgba(0,0,0,0.3)]"
+                  >kompleksowo</span
+                >
+              </h2>
+              <p class="mb-12 lg:mb-24 lg:max-w-3xl">
+                Oferujemy kompletną obsługę inwestycji terenów zielonych.
+                Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+                Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w
+                życie, a na każdym etapie posłużymy radą i wieloletnim
+                doświadczeniem.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap lg:flex-nowrap">
+            <a href="#" class="card">
+              <p class="card_heading before:bg-project">Projekty</p>
+              <p class="pb-12 pt-2">
+                Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                wykorzystaniem istniejącej przestrzeni.
+              </p>
+              <span class="link">Dowiedz się więcej</span>
+            </a>
+            <a href="#" class="card">
+              <p class="card_heading before:bg-eye">Wizualizacje</p>
+              <p class="pb-12 pt-2">
+                Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+                spaceru animowanego w technologii 3D.
+              </p>
+              <span class="link">Dowiedz się więcej</span>
+            </a>
+            <a class="card lg:mr-0" href="#">
+              <p class="card_heading before:bg-stars">Realizacje</p>
+              <p class="pb-12 pt-2">
+                Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+                zaawansowanych technologii.
+              </p>
+              <span class="link">Zobacz nasze realizacje</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-green relative" id="o_firme">
+        <div
+          class="absolute left-0 top-0 bottom-0 hidden w-1/2 rounded-3xl md:block"
+        >
+          <img
+            src="./src/assets/images/o_firme.png"
+            alt="about_us"
+            class="h-full w-full object-cover"
+          />
+        </div>
+
+        <div class="container-px text-start mx-auto h-full py-14 lg:py-36">
+          <div
+            class="text-lightgrey ml-auto w-full pl-0 md:w-1/2 md:pl-10 lg:pl-28"
+          >
+            <p class="mb-3 w-1/3 text-sm">O firme</p>
+            <h2 class="subtitle mb-4 leading-tight lg:mb-10">
+              Tworzymy<br />
+              z&nbsp;<span
+                class="italic drop-shadow-[0_4px_5px_rgba(0,0,0,0.3)]"
+                >pasją</span
+              >
+            </h2>
+            <p class="mb-7 text-base lg:mb-16">
+              Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+              wykwalifikowani projektanci oraz architekci, których zadaniem jest
+              rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+              specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+              minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+              małoobsługowe, dostosowane do współczesnego trybu życia.
+            </p>
+            <button
+              class="btn btn_hover hover:border-green hover:text-green hover:bg-white"
+            >
+              Poznaj nas bliżej
+              <span class="arrow hover_poznaj bg-white_arrow р"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-beige pb-16 pt-14 lg:pt-32 lg:pb-40" id="projekty">
+        <div class="container-px">
+          <p class="text-green mb-3 text-xs">Realizacje</p>
+          <h2 class="subtitle mb-10 lg:mb-24">
+            Nasze
+            <span class="italic drop-shadow-[0_4px_5px_rgba(0,0,0,0.3)]"
+              >projekty</span
+            >
+          </h2>
+        </div>
+
+        <div class="relative">
+          <div
+            id="gallery-gradient"
+            class="gallery-gradient pointer-events-none absolute z-10 h-full w-full transition-all duration-500"
+          ></div>
+          <ul
+            id="gallery"
+            class="max-h-[1250px] overflow-hidden transition-all duration-700"
+          >
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo1.png"
+                alt="photo1"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo2.png"
+                alt="photo2"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo3.png"
+                alt="photo3"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo4.png"
+                alt="photo4"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo5.png"
+                alt="photo5"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo6.png"
+                alt="photo6"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo7.png"
+                alt="photo7"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo1.png"
+                alt="photo1"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo2.png"
+                alt="photo2"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo7.png"
+                alt="photo7"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo8.png"
+                alt="photo8"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo6.png"
+                alt="photo6"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo7.png"
+                alt="photo7"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo2.png"
+                alt="photo2"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo2.png"
+                alt="photo2"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo5.png"
+                alt="photo5"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo9.png"
+                alt="photo9"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo5.png"
+                alt="photo5"
+              />
+            </li>
+            <li>
+              <img
+                class="cursor-pointer"
+                src="./src/assets/images/photo2.png"
+                alt="photo2"
+              />
+            </li>
+          </ul>
+          <button
+            id="toggle-gallery"
+            class="btn absolute bottom-0 left-1/2 z-20 translate-y-full -translate-x-1/2 border-black md:translate-y-1/2"
+          >
+            <span>Rozwiń</span>
+            <span class="arrow bg-black_arrow"></span>
+          </button>
+
+          <div
+            id="preview"
+            class="invisible fixed top-0 left-0 z-30 flex h-screen w-screen items-center justify-center bg-black bg-opacity-80 opacity-0 transition-all duration-300"
+          >
+            <span
+              id="preview-close"
+              class="absolute top-4 right-4 cursor-pointer text-2xl text-white"
+              >&times;</span
+            >
+            <div class="h-[55rem] max-h-[55rem] w-[55rem] max-w-[55rem] px-5">
+              <img
+                class="h-full w-full object-contain"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs="
+                alt="placeholder"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-7 xl:py-16">
+        <div class="container-px subcontainer">
+          <div
+            class="bg-green flex flex-col items-start justify-between py-14 px-14 text-white md:py-20 md:px-16 lg:flex-row lg:items-center lg:py-32 lg:px-28"
+          >
+            <h2 class="mr-5 mb-5 text-4xl font-extralight leading-snug">
+              Zostańmy w kontakcie! <br />
+              Znajdziesz nas na
+              <span
+                class="font-light italic drop-shadow-[0_4px_5px_rgba(0,0,0,0.3)]"
+                >Instagramie</span
+              >.
+            </h2>
+            <div class="flex flex-col items-center">
+              <p class="mb-5 whitespace-nowrap">
+                Śledź nasze<br />
+                najnowsze realizacje!
+              </p>
+              <a
+                href="#"
+                class="btn text-green hover:bg-green w-full bg-white text-center hover:border-white hover:text-white"
+              >
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="md:py-17 bg-black py-7 text-white" id="kontakt">
+      <div class="container-px subcontainer">
+        <div
+          class="border-b-lightgrey mb-14 flex flex-col flex-wrap items-center border-b pb-16 md:flex-row md:justify-between lg:flex-row lg:flex-nowrap"
+        >
+          <a href="#" class="mb-10 shrink-0 md:mb-0">
+            <img
+              class="w-64 md:w-32"
+              src="./src/assets/logos/logo-base.svg"
+              alt="logo"
+            />
+          </a>
+          <div
+            class="flex w-full flex-col items-center md:flex-row md:justify-between lg:justify-end"
+          >
+            <p class="mb-3 mr-6 md:mb-0">
+              Daj znać, co możemy dla Ciebie zrobić!
+            </p>
+            <button
+              class="btn bg-green border-green hover:text-green w-full hover:border-white hover:bg-white md:w-auto"
+            >
+              Skontaktuj się z nami
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-14 flex justify-between lg:mb-28">
+          <ul class="flex flex-col lg:flex-row">
+            <li class="mb-3 mr-12 lg:mb-0"><a href="#">Kontakt</a></li>
+            <li class="mb-3 mr-12 lg:mb-0"><a href="#">Instagram</a></li>
+            <li class="mb-3 mr-12 lg:mb-0"><a href="#">Facebook</a></li>
+            <li class="mb-3 mr-12 lg:mb-0"><a href="#">Kontakt</a></li>
+            <li><a class="mr-12" href="#">LinkedIn</a></li>
+          </ul>
+          <div
+            class="sm:justify-normal flex flex-col flex-wrap justify-evenly md:flex-row md:items-center lg:justify-between"
+          >
+            <a class="mr-4 whitespace-nowrap md:mr-12" href="tel:000-000-000"
+              >000-000-000</a
+            >
+            <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <p>Prawa zastrzeżone © 2022</p>
+          <div class="flex">
+            <p class="mr-4 whitespace-nowrap">made by</p>
+            <img src="./src/assets/logos/logo-full-loght.svg" alt="logo" />
+          </div>
+        </div>
+      </div>
+
+      <script type="module" src="./src/main.js"></script>
+    </footer>
+  </body>
+</html>
